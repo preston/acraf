@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annotations xmlns="http://www.tgen.org"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.tgen.org file:/Users/preston/Desktop/Aberration%20Drug%20Response%20Annotation%20Exchange/acraf.xsd">
+    <annotation>
+        <disease meshid="flhjkLbkIB8y2CBuXfFuOd9yONFX"/>
+        <compound pubchemid="-1166242" name="aGSHKjg_qyDjFwEjxqebNO"/>
+        <aberration name="kxKb9qARPTn_sxY" phenotype="sensitivity">
+            <description>y_ji0Jmdv1fIv7x</description>
+            <gene hugoid="iu27qYy" entrezid="OQVASMcGin-I8JwJdD9zG"/>
+            <pathway name="C"/>
+            <links>
+                <pubmed id="-731927406"/>
+                <pubmed id="653286035"/>
+                <pubmed id="-1245729361"/>
+            </links>
+        </aberration>
+    </annotation>
+    <annotation>
+        <disease meshid="q37kKNz"/>
+        <compound pubchemid="1749707249" name="WqL71KMuoIjIO1IHo5h.gxr"/>
+        <aberration name="hT2F4iqj.Sctz" phenotype="sensitivity">
+            <description>ptkz53</description>
+            <gene hugoid="yku8ksrzjDiT" entrezid="CEZ2oajhWW4bmkjm-"/>
+            <pathway name="A3l"/>
+            <links>
+                <pubmed id="-342143225"/>
+                <pubmed id="1579925249"/>
+                <pubmed id="310609471"/>
+            </links>
+        </aberration>
+    </annotation>
+    <annotation>
+        <disease meshid="GW.2"/>
+        <compound pubchemid="1211241460" name="r3a-NvH2ZF"/>
+        <aberration name="Hfmj7" phenotype="resistence">
+            <description>hjgMfNUdTvnnLYY6Y6wBSt</description>
+            <gene hugoid="mnGoSi3rubNsuQAc3tcmwm.WOPB" entrezid="gtk1gjgLVeoszkGBWFIuXRdA52"/>
+            <pathway name="qKR5L-9nREVB_6Vm"/>
+            <links>
+                <pubmed id="-816873298"/>
+                <pubmed id="216449600"/>
+                <pubmed id="589683082"/>
+            </links>
+        </aberration>
+    </annotation>
+</annotations>

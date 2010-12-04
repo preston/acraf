@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annotations xmlns="http://www.tgen.org"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.tgen.org file:/Users/preston/Desktop/Aberration%20Drug%20Response%20Annotation%20Exchange/acraf.xsd">
+    <annotation>
+        <disease meshid="UQL"/>
+        <compound pubchemid="1672593570" name="chJjTThgeQ"/>
+        <aberration name="e1g49" phenotype="sensitivity">
+            <description>H.W4hLZ11Ch7viHxSjeLdqKX</description>
+            <gene hugoid="y5O5W44xxnNuCsW.L" entrezid="Mr4VrSSbXhRKAfDWvrUXc28chOqax"/>
+            <pathway name="GQ7lxdFIdRe"/>
+            <links>
+                <pubmed id="631496667"/>
+                <pubmed id="1932558835"/>
+                <pubmed id="-1121370144"/>
+            </links>
+        </aberration>
+    </annotation>
+    <annotation>
+        <disease meshid="tMrteLg5rNo4LdN66SW5p7RlBhFj"/>
+        <compound pubchemid="-2053142262" name="bLBbex4cyWUmEYxxklNUzZ"/>
+        <aberration name="x_oM_1F39cLDYB1Ie-m" phenotype="resistence">
+            <description>cZ</description>
+            <gene hugoid="QP2Jk" entrezid="xBHv"/>
+            <pathway name="_I"/>
+            <links>
+                <pubmed id="-1151856568"/>
+                <pubmed id="-1806589875"/>
+                <pubmed id="-490206915"/>
+            </links>
+        </aberration>
+    </annotation>
+    <annotation>
+        <disease meshid="tDDo"/>
+        <compound pubchemid="-220839865" name="d-"/>
+        <aberration name="lNdx" phenotype="resistence">
+            <description>KJ1NavcSwg6N.wapOsUw2n</description>
+            <gene hugoid="PrFQBVZ._J.cxBge" entrezid="To0PEgi4m"/>
+            <pathway name="I_FzvmnP3I4odYIHv6"/>
+            <links>
+                <pubmed id="1421933167"/>
+                <pubmed id="-1935514215"/>
+                <pubmed id="1804180874"/>
+            </links>
+        </aberration>
+    </annotation>
+</annotations>

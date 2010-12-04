@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<acraf xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.tgen.org acraf.xsd">
+	<annotation>
+		<!-- PubChem ID is required; name optional -->
+		<compound pubchemid="216239" name="Sorafenib"/>
+		<!-- Carcinoma, Hepatocellular -->
+		<disease meshid="C04.557.470.200"/>
+		<aberration name="" phenotype="sensitivity" level="pathway">
+			<pathway name="MAPK/ERK"/>
+			<cellline>MHCC97-H</cellline>
+			<links>
+				<pubmed id="19698189" fulltext="true"/>
+			</links>
+			<genes>
+				<gene hugo="" entrez=""/>
+			</genes>
+			<description>
+				The results revealed that target cells&#x2019; cytotoxic sensitivity to natural killer (NK) cells increased in association with up-regulation of NKG2DLs on tumor cells after incubation with sorafenib and sunitinib. Furthermore, up-regulation in sunitinib group was much higher than in sorafenib group when it came to the expressions of NKG2DLs on tumor cells. For another, ABCG2 (High) CNE2/DDP was much more sensitive to the regulation than ABCG2 (Low) CNE2/DDP.
+			</description>
+			<annotator firstName="Alice" lastName="Anderson"/>
+		</aberration>
+	</annotation>
+	<annotation>
+		<compound pubchemid="216239" name="Sorafenib"/>
+		<!-- Carcinoma, Hepatocellular -->
+		<disease meshid="C04.557.470.200"/>
+		<aberration name="" description="" phenotype="sensitivity" level="pathway">
+			<pathway name="MAPK/ERK"/>
+			<genes>
+				<gene hugo="" name=""/>
+			</genes>
+			<description>
+				The results revealed that target cells&#x2019; cytotoxic sensitivity to natural killer (NK) cells increased in association with up-regulation of NKG2DLs on tumor cells after incubation with sorafenib and sunitinib. Furthermore, up-regulation in sunitinib group was much higher than in sorafenib group when it came to the expressions of NKG2DLs on tumor cells. For another, ABCG2 (High) CNE2/DDP was much more sensitive to the regulation than ABCG2 (Low) CNE2/DDP.
+			</description>
+			<annotator firstName="Alice" lastName="Anderson" company="Example, Inc." title="Research Scientist"/>
+		</aberration>
+	</annotation>
+</acraf>

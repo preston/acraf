@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.tgen.org"
+	xmlns:tgen="http://www.tgen.org">
+	<!-- xs:attribute name="phenotype" type="xs:string" use="required">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="sensitivity"/>
+				<xs:enumeration value="resistance"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:attribute>
+	<xs:attribute name="level" type="xs:restriction" use="required">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="protein"/>
+				<xs:enumeration value="pathway"/>
+				<xs:enumeration value="rna"/>
+				<xs:enumeration value="dna"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:attribute -->
+	<xs:element name="annotations">
+		<xs:complexType>
+			<xs:sequence minOccurs="1">
+				<xs:element ref="tgen:annotation" maxOccurs="unbounded" minOccurs="1"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="annotation">
+		<xs:complexType>
+			<xs:all>
+				<xs:element ref="tgen:disease"/>
+				<xs:element ref="tgen:compound"/>
+				<xs:element ref="tgen:aberration"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="disease">
+		<xs:complexType>
+			<xs:attribute name="meshid" type="xs:string" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="compound">
+		<xs:complexType>
+			<xs:attribute name="pubchemid" type="xs:integer" use="required"/>
+			<xs:attribute name="name" type="xs:string"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="aberration">
+		<xs:complexType>
+			<xs:all>
+				<xs:element ref="tgen:description"/>
+				<xs:element minOccurs="0" ref="tgen:gene"/>
+				<xs:element minOccurs="0" ref="tgen:pathway"/>
+				<xs:element ref="tgen:links"/>
+			</xs:all>
+			<xs:attribute name="name" type="xs:string"/>
+			<xs:attribute form="unqualified" name="phenotype" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="sensitivity"/>
+						<xs:enumeration value="resistence"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="gene">
+		<xs:complexType>
+			<xs:attribute name="hugoid" type="xs:string" use="required"/>
+			<xs:attribute name="entrezid" type="xs:string"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="pubmed">
+		<xs:complexType>
+			<xs:attribute name="id" type="xs:integer" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="pathway">
+		<xs:complexType>
+			<xs:attribute name="name" type="xs:string" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="links">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="unbounded" minOccurs="0" ref="tgen:pubmed"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="description" type="xs:string"/>
+</xs:schema>
