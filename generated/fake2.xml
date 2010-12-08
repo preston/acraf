@@ -1,47 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<annotations xmlns="http://www.tgen.org"
+<annotation xmlns="http://www.tgen.org"
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xsi:schemaLocation="http://www.tgen.org file:/Users/preston/Desktop/Aberration%20Drug%20Response%20Annotation%20Exchange/acraf.xsd">
-    <annotation>
-        <disease meshid="EFvvxSpTfwHjdnIsK"/>
-        <compound pubchemid="426242522" name="QcUvEzObVNJ7RqRvN8BLmz0RccJR2"/>
-        <aberration name="U7sk4Qx9gfjK20p0_g" phenotype="resistence">
-            <description>D2JOqCYnJS</description>
-            <gene hugoid="FPU_R8" entrezid="I0KFgB24ikWreVJPZCx"/>
-            <pathway name="tNaPo7NGOHL8AW"/>
-            <links>
-                <pubmed id="388511479"/>
-                <pubmed id="1240937833"/>
-                <pubmed id="1528826124"/>
-            </links>
-        </aberration>
-    </annotation>
-    <annotation>
-        <disease meshid="sgqe"/>
-        <compound pubchemid="-1491676098" name="KQFpEdYUQXzrTi"/>
-        <aberration name="AjauVAzEs" phenotype="sensitivity">
-            <description>n-oUs7r4ItInfrzs8gTas</description>
-            <gene hugoid="Sib0b7daGmd" entrezid="_MlR.DwRrFhodoP"/>
-            <pathway name="EWPditckD.OTC8j3_YGWzT7C"/>
-            <links>
-                <pubmed id="-1403235129"/>
-                <pubmed id="-1156120250"/>
-                <pubmed id="546338800"/>
-            </links>
-        </aberration>
-    </annotation>
-    <annotation>
-        <disease meshid="BXVPC0gt6ZgGA6RCkTsHRa"/>
-        <compound pubchemid="137364138" name="V1XPda4bjSFqUGBK"/>
-        <aberration name="vHDwoARs119DzGsZYU44-KcFq" phenotype="sensitivity">
-            <description>pt6Pr</description>
-            <gene hugoid="EbPxM38Wb9jEE73Sf7" entrezid="kAS1CmMDIeAHBKc_EsG5ZDGzpew"/>
-            <pathway name="eDnFIb-I9KinC"/>
-            <links>
-                <pubmed id="1043298435"/>
-                <pubmed id="1187431573"/>
-                <pubmed id="-691356606"/>
-            </links>
-        </aberration>
-    </annotation>
-</annotations>
+ xsi:schemaLocation="http://www.tgen.org file:/Users/preston/Developer/git/acraf/acraf.xsd">
+    <disease meshid="nQMAG1y"/>
+    <compound pubchemid="-863457491" name="RG5g49vovfWWQNvBtBdOva"/>
+    <protein-aberration xmlns:tgen="http://www.tgen.org" xsi:type="tgen:dna-aberration-type" level="substitution" name="td6wO_Pd" phenotype="resistence" cosmicid="Mdnpo6zvZ7e" priority="low">
+        <description>Cd</description>
+        <gene hugoid="ZF74ufd_JRSjYJa1nV3hQDAiJzJww" entrezid="_nKvQqqHdamh-lzrZT"/>
+        <pathway name="iC0TylV33PCN.u"/>
+        <links>
+            <pubmed id="-442312361"/>
+            <pubmed id="1263000279"/>
+            <pubmed id="1105351940"/>
+        </links>
+    </protein-aberration>
+</annotation>

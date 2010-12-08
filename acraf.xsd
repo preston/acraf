@@ -1,24 +1,6 @@
 <?xml version="1.0"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.tgen.org"
 	xmlns:tgen="http://www.tgen.org">
-	<!-- xs:attribute name="phenotype" type="xs:string" use="required">
-		<xs:simpleType>
-			<xs:restriction base="xs:string">
-				<xs:enumeration value="sensitivity"/>
-				<xs:enumeration value="resistance"/>
-			</xs:restriction>
-		</xs:simpleType>
-	</xs:attribute>
-	<xs:attribute name="level" type="xs:restriction" use="required">
-		<xs:simpleType>
-			<xs:restriction base="xs:string">
-				<xs:enumeration value="protein"/>
-				<xs:enumeration value="pathway"/>
-				<xs:enumeration value="rna"/>
-				<xs:enumeration value="dna"/>
-			</xs:restriction>
-		</xs:simpleType>
-	</xs:attribute -->
 	<xs:element name="annotations">
 		<xs:complexType>
 			<xs:sequence minOccurs="1">
@@ -46,25 +28,6 @@
 			<xs:attribute name="name" type="xs:string"/>
 		</xs:complexType>
 	</xs:element>
-	<xs:element name="aberration">
-		<xs:complexType>
-			<xs:all>
-				<xs:element ref="tgen:description"/>
-				<xs:element minOccurs="0" ref="tgen:gene"/>
-				<xs:element minOccurs="0" ref="tgen:pathway"/>
-				<xs:element ref="tgen:links"/>
-			</xs:all>
-			<xs:attribute name="name" type="xs:string"/>
-			<xs:attribute form="unqualified" name="phenotype" use="required">
-				<xs:simpleType>
-					<xs:restriction base="xs:string">
-						<xs:enumeration value="sensitivity"/>
-						<xs:enumeration value="resistence"/>
-					</xs:restriction>
-				</xs:simpleType>
-			</xs:attribute>
-		</xs:complexType>
-	</xs:element>
 	<xs:element name="gene">
 		<xs:complexType>
 			<xs:attribute name="hugoid" type="xs:string" use="required"/>
@@ -89,4 +52,102 @@
 		</xs:complexType>
 	</xs:element>
 	<xs:element name="description" type="xs:string"/>
+
+	<xs:element name="aberration" abstract="true" type="tgen:aberration-type"/>
+
+	<xs:element name="dna-aberration" substitutionGroup="tgen:aberration"
+		type="tgen:dna-aberration-type"> </xs:element>
+	<xs:element name="rna-aberration" substitutionGroup="tgen:aberration"
+		type="tgen:rna-aberration-type"/>
+	<xs:element name="protein-aberration" substitutionGroup="tgen:aberration"/>
+	<xs:element name="pathway-aberration" substitutionGroup="tgen:aberration"
+		type="tgen:pathway-aberration-type"/>
+	<xs:complexType name="aberration-type" abstract="true">
+		<xs:all>
+			<xs:element ref="tgen:description"/>
+			<xs:element minOccurs="0" ref="tgen:gene"/>
+			<xs:element minOccurs="0" ref="tgen:pathway"/>
+			<xs:element ref="tgen:links"/>
+		</xs:all>
+		<xs:attribute name="name" type="xs:string"/>
+		<xs:attribute form="unqualified" name="phenotype" use="required">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="sensitivity"/>
+					<xs:enumeration value="resistence"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="cosmicid" type="xs:string"/>
+		<xs:attribute name="priority" use="required">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="high"/>
+					<xs:enumeration value="medium"/>
+					<xs:enumeration value="low"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:complexType>
+	<xs:complexType name="dna-aberration-type">
+		<xs:complexContent>
+			<xs:extension base="tgen:aberration-type">
+				<xs:attribute name="level">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:enumeration value="substitution"/>
+							<xs:enumeration value="insertion"/>
+							<xs:enumeration value="deletion"/>
+							<xs:enumeration value="translocation"/>
+							<xs:enumeration value="gain"/>
+							<xs:enumeration value="loss"/>
+							<xs:enumeration value="snp"/>
+							<xs:enumeration value="hypermethylated"/>
+							<xs:enumeration value="hypomethylated"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:attribute>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="rna-aberration-type">
+		<xs:complexContent>
+			<xs:extension base="tgen:aberration-type">
+				<xs:attribute name="level">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:enumeration value="up"/>
+							<xs:enumeration value="down"/>
+							<xs:enumeration value="unchanged"/>
+							<xs:enumeration value="fusion"/>
+							<xs:enumeration value="splice"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:attribute>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="protein-aberration-type">
+		<xs:complexContent>
+			<xs:extension base="tgen:aberration-type"/>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="pathway-aberration-type">
+		<xs:complexContent>
+			<xs:extension base="tgen:aberration-type">
+				<xs:attribute name="level">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:enumeration value="activated"/>
+							<xs:enumeration value="inhibited"/>
+							<xs:enumeration value="altered"/>
+							<xs:enumeration value="up"/>
+							<xs:enumeration value="down"/>
+							<xs:enumeration value="unchanged"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:attribute>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
 </xs:schema>
