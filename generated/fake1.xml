@@ -1,18 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<annotation xmlns="http://www.tgen.org"
+<annotations xmlns="http://www.tgen.org"
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
  xsi:schemaLocation="http://www.tgen.org file:/Users/preston/Developer/git/acraf/acraf.xsd">
-    <disease meshid="dUYF4KfsCIcPKd8kfepmA3D-B3ghx7"/>
-    <compound pubchemid="-1961670531" name="iPaC"/>
-    <dna-aberration level="translocation" name="dxaPR5I_TbxQ7w" phenotype="resistence" cosmicid="J5YjSVJsSKgz67U3itrk2C0aH"
-         priority="high">
-        <description>m.U8</description>
-        <gene hugoid="F7zVoD544t" entrezid="hc6JCeXqzRJHVBga-O"/>
-        <pathway name="mHYX4n25-R68dnNLw8SIxq4zn"/>
-        <links>
-            <pubmed id="-327713824"/>
-            <pubmed id="-1582776299"/>
-            <pubmed id="68705593"/>
-        </links>
-    </dna-aberration>
-</annotation>
+    <annotation>
+        <disease meshid="LHPTECEf-2uF"/>
+        <compound pubchemid="1453897814" name="YpJ"/>
+        <pathway-aberration level="inhibited" name="rfhWw5.H0-" phenotype="sensitivity" cosmicid="VonHQBwAIz8UVQMaUr_eLQ" priority="medium">
+            <description>CG-xnQxtSNbDFSJ_xULM</description>
+            <gene hugoid="pxEpRpRua0" entrezid="LAWeT5RsHp6EI2n6Gr1ez9GrQNIH"/>
+            <pathway name="TeR87"/>
+            <links>
+                <pubmed id="1851244639"/>
+                <pubmed id="186660354"/>
+                <pubmed id="1829853165"/>
+            </links>
+        </pathway-aberration>
+    </annotation>
+    <annotation>
+        <disease meshid="Mlks7iU1HuDDsPTqj4zQXw6P_V"/>
+        <compound pubchemid="-103708595" name="Drwy.xBdJO40JGubDW4"/>
+        <rna-aberration level="down" name="aXfpJqTK2-yz" phenotype="sensitivity" cosmicid="oBA2Cf" priority="medium">
+            <description>Mz0kjjpjlzkV-5HxX</description>
+            <gene hugoid="xWmEcAAkSMACehqVBG" entrezid="j7cEedRHrR2Ye97ftWi3ITg"/>
+            <pathway name="YdSLImLO1XZ1e-XV1qf"/>
+            <links>
+                <pubmed id="-2126984381"/>
+                <pubmed id="-535886758"/>
+                <pubmed id="1241864194"/>
+            </links>
+        </rna-aberration>
+    </annotation>
+    <annotation>
+        <disease meshid="EdaaF6YYnJAX"/>
+        <compound pubchemid="30309875" name="TV0DQpuTrEVK53YS3IGbAn"/>
+        <pathway-aberration level="altered" name="FFCgqUsAZv3mcwPYW" phenotype="resistence" cosmicid="mtZ4HMeefTKbLM9I84jXWB2oRqfip"
+             priority="high">
+            <description>PEwziUwme</description>
+            <gene hugoid="sQJ4UBCtOnKlv5sOipiE" entrezid="_FVL.mMru4X7s"/>
+            <pathway name="f2d0F_FvQoVepRqOTlPiSdNp"/>
+            <links>
+                <pubmed id="-1627181472"/>
+                <pubmed id="704543805"/>
+                <pubmed id="1361018420"/>
+            </links>
+        </pathway-aberration>
+    </annotation>
+</annotations>

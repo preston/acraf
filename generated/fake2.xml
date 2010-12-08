@@ -1,17 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<annotation xmlns="http://www.tgen.org"
+<annotations xmlns="http://www.tgen.org"
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
  xsi:schemaLocation="http://www.tgen.org file:/Users/preston/Developer/git/acraf/acraf.xsd">
-    <disease meshid="nQMAG1y"/>
-    <compound pubchemid="-863457491" name="RG5g49vovfWWQNvBtBdOva"/>
-    <protein-aberration xmlns:tgen="http://www.tgen.org" xsi:type="tgen:dna-aberration-type" level="substitution" name="td6wO_Pd" phenotype="resistence" cosmicid="Mdnpo6zvZ7e" priority="low">
-        <description>Cd</description>
-        <gene hugoid="ZF74ufd_JRSjYJa1nV3hQDAiJzJww" entrezid="_nKvQqqHdamh-lzrZT"/>
-        <pathway name="iC0TylV33PCN.u"/>
-        <links>
-            <pubmed id="-442312361"/>
-            <pubmed id="1263000279"/>
-            <pubmed id="1105351940"/>
-        </links>
-    </protein-aberration>
-</annotation>
+    <annotation>
+        <disease meshid="ON"/>
+        <compound pubchemid="1007024050" name="ddVYC"/>
+        <dna-aberration level="deletion" name="ntW" phenotype="resistence" cosmicid="F7vFOc-gQJH5TvC6sB4im9P0awI" priority="medium">
+            <description>F.jLwqKrfScoDL4JF12K8d</description>
+            <gene hugoid="VUwe7M" entrezid="AXQU9R_kM"/>
+            <pathway name="VZVQO38YKh5RXWfTN4PYi6O9zk"/>
+            <links>
+                <pubmed id="861483500"/>
+                <pubmed id="-878861063"/>
+                <pubmed id="-1100894023"/>
+            </links>
+        </dna-aberration>
+    </annotation>
+    <annotation>
+        <disease meshid="mfBVqJQXYAF"/>
+        <compound pubchemid="-1343479307" name="VWegdH"/>
+        <pathway-aberration level="inhibited" name="v_Ac" phenotype="sensitivity" cosmicid="aCc2meGWPCdzoOTAw0V8-lG9LV" priority="low">
+            <description>O2fcbdJVdB_XpzunBw</description>
+            <gene hugoid="DjTs" entrezid="t0PT8lUzGI-XJSFrb0GSs9RW4VRoQ1"/>
+            <pathway name="tyhHv"/>
+            <links>
+                <pubmed id="1759035734"/>
+                <pubmed id="710497168"/>
+                <pubmed id="1427845141"/>
+            </links>
+        </pathway-aberration>
+    </annotation>
+    <annotation>
+        <disease meshid="g9TS2p"/>
+        <compound pubchemid="893996636" name="GQoi_LA2NPJi8HmJDQvWi4K"/>
+        <pathway-aberration level="altered" name="Juij_Q" phenotype="sensitivity" cosmicid="ROEQlG8uYKaxbyQ3lyZiJ9" priority="high">
+            <description>cpNQ7</description>
+            <gene hugoid="Jl" entrezid="tizio"/>
+            <pathway name="UDUuuHl_HRscJK7WoosE"/>
+            <links>
+                <pubmed id="1400787489"/>
+                <pubmed id="-142842679"/>
+                <pubmed id="961059502"/>
+            </links>
+        </pathway-aberration>
+    </annotation>
+</annotations>

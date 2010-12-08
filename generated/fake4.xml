@@ -1,17 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<annotation xmlns="http://www.tgen.org"
+<annotations xmlns="http://www.tgen.org"
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
  xsi:schemaLocation="http://www.tgen.org file:/Users/preston/Developer/git/acraf/acraf.xsd">
-    <disease meshid="gfVgfn-brQ4ML59So2SeCFDDOy"/>
-    <compound pubchemid="-984913959" name="NPSwttsxAiIUUIc7_J83q"/>
-    <pathway-aberration level="activated" name="Zr_mKqha0..FPLo" phenotype="sensitivity" cosmicid="pgzettmZ27Ip" priority="high">
-        <description>happg</description>
-        <gene hugoid="TVYpp1XpbbP7b5R8gms0Ly" entrezid="O9IckP4IvSGmySRN0zo_hUZ"/>
-        <pathway name="XjbR"/>
-        <links>
-            <pubmed id="-1563623809"/>
-            <pubmed id="-490648504"/>
-            <pubmed id="-205855189"/>
-        </links>
-    </pathway-aberration>
-</annotation>
+    <annotation>
+        <disease meshid="H4zvpQDJWjTd5cN"/>
+        <compound pubchemid="-75152154" name="K"/>
+        <rna-aberration level="splice" name="NOrf" phenotype="resistence" cosmicid="bYDJtn23LHzrlr2Rh.l16uR5" priority="medium">
+            <description>dM6mZLA</description>
+            <gene hugoid="mVeu0" entrezid="iS3NH_lEAOJy44HWvKEjKsUaIYFHc"/>
+            <pathway name="AuPEG_HrZb2dtzUUdz"/>
+            <links>
+                <pubmed id="1356344106"/>
+                <pubmed id="-1132884417"/>
+                <pubmed id="1951461443"/>
+            </links>
+        </rna-aberration>
+    </annotation>
+    <annotation>
+        <disease meshid="cw29Omjus1"/>
+        <compound pubchemid="1260012866" name="gtHA.PgIsc03slGl"/>
+        <rna-aberration level="unchanged" name="pyYVKxz3dkUh59lAVDp7s..Z9EK" phenotype="sensitivity" cosmicid="EF_7bazADvuLz87U9iTz."
+             priority="high">
+            <description>volbDwcOySC5_kbDecA</description>
+            <gene hugoid="hXpYCQK8xuN8dm5-GHuDt" entrezid="XlJ02LLCqchN9"/>
+            <pathway name="tb_jbjAicg-HDOc-3kzjqAXmMK"/>
+            <links>
+                <pubmed id="-929050841"/>
+                <pubmed id="61888166"/>
+                <pubmed id="1716617774"/>
+            </links>
+        </rna-aberration>
+    </annotation>
+    <annotation>
+        <disease meshid="MPvLVat0rh_o"/>
+        <compound pubchemid="-789425990" name="oLx5Oo-Gisv0gl8-eKP"/>
+        <protein-aberration xmlns:tgen="http://www.tgen.org" xsi:type="tgen:rna-aberration-type" level="down" name="oxBnfYDZbOOG3ZRS81mh6jjfaO6XbK" phenotype="sensitivity" cosmicid="ogv_6UJOqY2_HpRACVjD9CaSxWoi"
+             priority="medium">
+            <description>hK7Sk</description>
+            <gene hugoid="gsPrd9clCgiUH8s04yagNz_Gn" entrezid="u"/>
+            <pathway name="ZSx0VHZIXw.lh"/>
+            <links>
+                <pubmed id="-127546795"/>
+                <pubmed id="403285158"/>
+                <pubmed id="1196887094"/>
+            </links>
+        </protein-aberration>
+    </annotation>
+</annotations>
